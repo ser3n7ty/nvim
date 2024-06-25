@@ -19,10 +19,13 @@ return {
     }
 
     db.section.buttons.val = {
-      db.button("f", "󰮗  Find files", ":Telescope find_files <CR>"),
-      db.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
-      db.button("t", "󰊄  Find text", ":Telescope live_grep <CR>"),
-      db.button("e", "  Configuration", ":e ~/.config/nvim/lua/core/keymaps.lua<CR>"),
+      db.button("f", "󰮗  Find Files", ":Telescope find_files <CR>"),
+      db.button("r", "  Recently Used Files", ":Telescope oldfiles <CR>"),
+      db.button("t", "󰊄  Find Text", ":Telescope live_grep <CR>"),
+      -- only valid in Linux environments
+      db.button("e", "  Configuration", ":e ~/.config/nvim/ <CR>"),
+      -- valid in Windows environments
+      -- db.button("e", "  Configuration", ":e C:\Users\<YourUsername>\AppData\Local\nvim\ <CR>"),
       db.button("q", "  Quit Neovim", ":qa<CR>"),
     }
 

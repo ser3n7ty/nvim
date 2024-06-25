@@ -2,7 +2,8 @@ return {
     "akinsho/bufferline.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons", "moll/vim-bbye" },
     config = function()
-      require("bufferline").setup({
+      local bufferline = require("bufferline")
+      bufferline.setup({ 
         options = {
           -- sidebar
           offsets = {
@@ -13,5 +14,10 @@ return {
           },
         }
       })
+
+      -- set keymaps
+      local keymap = vim.keymap
+      keymap.set("n", "<C-h>", "<cmd>BufferLineCyclePrev<CR>", { desc = " "})
+      keymap.set("n", "<C-l>", "<cmd>BufferLineCycleNext<CR>", { desc = " "})
     end,
 }
