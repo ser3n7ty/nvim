@@ -37,7 +37,7 @@ keymap.set("n", "<C-Right>", ":vertical resize -10<CR>", opt)
 keymap.set("n", "<C-Down>", ":resize -5<CR>", opt)
 keymap.set("n", "<C-Up>", ":resize +5<CR>", opt)
 -- 等比例
-keymap.set("n", "se", "<C-w>=", opt)
+keymap.set("n", "se", "<C-w>", opt)
 
 
 -- Visual 模式
