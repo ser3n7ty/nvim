@@ -101,5 +101,5 @@ vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldlevel = 99
 
--- 状态栏消息更简洁
+-- -- 状态栏消息更简洁
 vim.opt.shortmess:append("c")

@@ -1,6 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter", 
-  event = "VeryLazy",
+  event = "VimEnter",
   build = ":TSUpdate",
   dependencies = { "p00f/nvim-ts-rainbow" },
   config = function()
