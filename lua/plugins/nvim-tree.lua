@@ -18,11 +18,8 @@ return {
       renderer = {
         indent_markers = {
           enable = true,
-        },
+        }
       },
-      -- disable window_picker for
-      -- explorer to work well with
-      -- window splits
       
       actions = {
         open_file = {
@@ -31,12 +28,8 @@ return {
           },
         },
       },
-      -- filters = {
-      --   custom = { ".DS_Store" },
-      -- },
       git = {
-        ignore = false,
-    
+        ignore = true,
       },
   
     })
