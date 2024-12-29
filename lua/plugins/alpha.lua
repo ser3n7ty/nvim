@@ -4,19 +4,8 @@ return {
   config = function()
     local db = require("alpha.themes.dashboard")
     local alpha = require("alpha")
-    db.section.header.val = {
-      [[]],
-      [[]],
-      [[.                        .-.                 .;;;;.     .-.     ]],
-      [[    .:.   .-..;.   .-.     ;  :.;.       .-.' .;'  `     .;|/:  ]],
-      [[     ;;   :   ;;   ;     .;:  : `;     .'    .;'        .;   :  ]],
-      [[     ;    ;  ;;    :    .;' \ :  ;;  .'     .;'        .;    :  ]],
-      [[ .:' `._.:  ;;     ;.:'.;    \: ;;  ;      .;'     .:'.;     :  ]],
-      [[(__.-.;'    `;.__.:(__.'      `.`;.'   .;;;;;;;;;'(__.'      `. ]],
-      [[]],
-      [[]],
-      [[]],
-    }
+    --db.section.header.val = {
+    --}
 
     db.section.buttons.val = {
       db.button("f", "󰮗  Find Files", ":Telescope find_files <CR>"),
